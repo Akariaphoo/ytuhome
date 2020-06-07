@@ -1,0 +1,588 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Yangon Technological University</title>
+        <style>
+            .container{
+                width: 100%;
+                height: 100%;
+            }
+            .header{
+                background-color: white;
+                margin: 0px;
+                width: 100%;
+            }
+            .red{
+                width: 100%;
+                background-color: red;
+                height: 3px;
+            }
+            .nav1{
+                background-color: gray;
+                height: 40px;
+                width: 100%;
+                padding-top: 10px;
+               
+            }
+            .nav1s{
+                padding-left: 900px;
+            }
+            .nav1s>a{
+                color: white;
+                text-decoration: none;   
+                font-size: 20px;
+              
+            }
+            .nav1s>a:hover{
+                color:gainsboro;
+            }
+            
+            .title{
+                background-color: white;
+                width: 100px;
+                margin-left: 0px;
+                padding-left: 150px;
+            }
+            .image{
+                width: 1200px;
+                height: 150px;
+            }
+            .nav2{
+                background-color:#323b35;
+                height: 40px;
+                margin-left: 0px;
+                text-align: center;
+                padding-top: 15px;
+               
+        
+            }
+            .nav2s{
+                margin-left: 80px;
+            }
+           
+
+            .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 150px;
+            margin-top: 25px;
+            
+        }
+        .dropdown {
+            float: left;
+            overflow: hidden;
+            padding-left: 20px;
+           
+        }
+
+        .dropdown .dropbtn {
+            font-size: 14px;
+            border: none;
+            outline: none;
+            color: gainsboro;
+            background-color: inherit;
+            
+        }
+
+        .dropdown-content a {
+            float: none;
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            text-align: left;
+            background-color:white;
+        }
+
+        .dropdown-content a:hover {
+            background-color: #ddd;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+            .background{
+                width: 100%;
+            }
+            .objectives{
+                background-color: white;
+                height: 500px;
+                width: 100%;
+                margin-left: 0px;
+               margin-top: 40px;
+                display: flex;
+                
+            }
+            .obj1,.obj2,.obj3{
+                border: 1px solid gainsboro;
+                width: 350px;
+                height: 400px;
+                margin-left: 80px;
+               margin-top: 50px;
+                
+            }
+            h2{
+                text-align: center;
+                font-size: 30px;
+                color: #1f1c1c;
+                
+            }
+            p{
+                font-size: 20px;
+                color: #3d3838;
+                padding-left: 50px;
+                line-height: 35px;
+                letter-spacing: 1px;
+            }
+            .readmore{
+                border: 1px solid #db7c0f;
+                border-radius: 5px;
+                background-color: #db7c0f;
+               width: 130px;
+               height: 39px;
+                font-size: 15px;
+                color: white;
+                text-decoration: none;
+               margin-left: 200px;
+            }
+            .arrowimg{
+                width: 20px;
+                padding-left: 5px;
+                
+            }
+            .rectormessage{
+                background-color: white;
+                width: 100%;
+                height: 400px;
+                margin-left: 0px;
+                display: flex;
+               
+            }
+            .rectorimg{
+                float: left;
+                width: 370px;
+                padding-left: 80px;
+                padding-top: 50px;
+            }
+            h1{
+                color: #db7c0f;
+                padding-left: 60px;
+                padding-top: 10px;
+                font-size: 40px;
+            }
+            .messp{
+                width: 820px;
+                text-align: justify;
+                font-size: 18px;
+                color: #3d3838;
+                
+            }
+            .readmoremess{
+                border: 1px solid #db7c0f;
+                border-radius: 5px;
+                background-color: #db7c0f;
+               width: 130px;
+               height: 39px;
+                font-size: 15px;
+                color: white;
+                text-decoration: none;
+              float: right;
+            }
+            .events{
+                background-color: white;
+                width: 100%;
+                height: 400px;
+                
+            }
+            .eventh1{
+                text-align: center;
+            }
+            .eventimg{
+                width: 290px;
+                padding-left: 30px;
+                
+            }
+            .event{
+                display: flex;
+                margin-left: 50px;
+            }
+            .bgimg{
+                margin-top:50px;
+                background-image: url(http://ytu.edu.mm/wp-content/themes/StrapPress-master/images/bgslide.jpg);
+                background-repeat: no-repeat;
+                background-position: center;
+                height:250px;
+                display: flex;
+            }
+            .bgcontainer{
+                width: 1200px;
+                height: 160px;
+                margin-left: 100px;
+                margin-top: 50px;
+                display: flex;
+                padding-left: 100px;
+            }
+            .card1,.card2,.card3{
+                border: 2px solid white;
+                width: 300px;
+                height: 150px;
+                border-radius: 10px;
+                margin-left: 10px;
+                margin-top: 5px;
+                background-color:  rgba(22,26,70,0.4);
+
+            }
+            .ph2{
+                color: #db7c0f;
+                font-weight: bold;
+                text-align: center;
+                padding-top: 20px;
+            }
+            .ph3{
+                color: white;
+                font-weight: bold;
+                text-align: center;
+                padding-top: 10px;
+            }
+        
+            .more{
+                border: 1px solid #db7c0f;
+                border-radius: 5px;
+                background-color: #db7c0f;
+               width: 80px;
+               height: 39px;
+                font-size: 15px;
+                color: white;
+                text-decoration: none;
+               margin-left: 1230px;
+               margin-top: 30px;
+            }
+           .welcome{
+               background-color: white;
+               width: 100%;
+               height: 300px;
+           }
+           .welcomep{
+               text-align: justify;
+               font-size: 18px;
+                color: #3d3838;
+                width: 1200px;
+                margin-left: 50px;
+           }
+           .welcomebtn{
+            border: 1px solid #db7c0f;
+            border-radius: 5px;
+            background-color: #db7c0f;
+            width: 150px;
+            height: 39px;
+            font-size: 15px;
+            color: white;
+            text-decoration: none;
+            margin-left: 600px;
+            margin-top: 10px;
+           }
+           
+            .updatenews{
+                background-color: white;
+                width: 100%;
+                height: 900px;
+                padding-left: 50px;
+            }
+            .newsrow1,.newsrow2{
+                display: flex;
+                margin-left: 40px;
+            }
+            .news1{
+                border: 1px solid #3d3838;
+                border-radius: 5px;
+                width: 380px;
+                height: 350px;
+                margin-left: 20px;
+            }
+            .news1>p{
+                font-size: 15px;
+                color:#db7c0f;
+                padding-left: 5px;
+            }
+            .newsrow2{
+                margin-top: 20px;
+            }
+            .newsbtn{
+            border: 1px solid #db7c0f;
+            border-radius: 5px;
+            background-color: #db7c0f;
+            width: 80px;
+            height: 39px;
+            font-size: 15px;
+            color: white;
+            text-decoration: none;
+            margin-left: 1160px;
+            margin-top: 10px;
+            }
+            .footer{
+                background-color:#323b35;
+                height: 450px;
+                display: flex;
+                padding-left: 50px;
+               
+            }
+            .aboutus{
+                width: 450px;
+                height: 420px;
+                margin-left: 60px;
+                margin-top: 20px;
+            }
+            .links{
+                width: 300px;
+                height: 200px;
+                margin-left: 60px;
+                margin-top: 20px;
+            }
+            .posts{
+                width: 400px;
+                height: 300px;
+                margin-left: 80px;
+                margin-top: 20px;
+            }
+            .post{
+                display: block;
+                margin-left: 20px;
+                padding-left: 30px;
+                margin-top: 20px;
+            }
+           
+        </style>
+    </head>
+
+    <body>
+        <div class="container">
+            <div class="header">
+                <div class="red"></div>
+                <div class="nav1">
+                    <div class="nav1s">
+                    <a href="#">Alumini</a>&nbsp; &nbsp;| &nbsp; &nbsp;
+                    <a href="#">Library</a>&nbsp; &nbsp;| &nbsp; &nbsp;
+                    <a href="#">Sign in</a>&nbsp; &nbsp;| &nbsp; &nbsp;
+                    <a href="#">Register</a>
+                </div>
+                </div>
+                <div class="title">
+                    <img src="ytulogo.png" class="image">
+                </div>
+                
+                <div class="nav2">
+                    <div class="nav2s">
+                    <div class="dropdown">
+                        <button class="dropbtn" style="color: white;">Home</button>
+                    </div>
+                    <div class="dropdown">
+                        <button class="dropbtn">ABOUT YTU</button><img src="dropdown.png" width="10px" class="imgs">
+                            <div class="dropdown-content">
+                                <a href="#">Retor's Messages </a>
+                                <a href="#">History</a>
+                                
+                                
+                            </div>
+                    </div>
+                    <div class="dropdown">
+                        <button class="dropbtn">ADMISSION</button><img src="dropdown.png" width="10px" class="imgs">
+                            <div class="dropdown-content">
+                                <a href="#">Undergraduate </a>
+                                <a href="#">Graduate</a>
+                            </div>
+                    </div>
+                    <div class="dropdown">
+                        <button class="dropbtn">DEPARTMENT</button><img src="dropdown.png" width="10px" class="imgs">
+                            <div class="dropdown-content">
+                                <a href="#">Architecture </a>
+                                <a href="#">Chemical Engineering</a>
+                                <a href="#">Civil Engineering</a>
+                                
+                            </div>
+                    </div>
+                    <div class="dropdown">
+                        <button class="dropbtn">ACADEMIN</button><img src="dropdown.png" width="10px" class="imgs">
+                            <div class="dropdown-content">
+                                <a href="#">Undergraduate </a>
+                                <a href="#">Graduate</a>
+                                
+                            </div>
+                    </div>
+                    <div class="dropdown">
+                        <button class="dropbtn">NEWS AND EVENT</button><img src="dropdown.png" width="10px" class="imgs">
+                            <div class="dropdown-content">
+                                <a href="#">News </a>
+                                <a href="#">Events</a>
+                                <a href="#">Seminars</a>
+                                
+                            </div>
+                    </div>
+                    <div class="dropdown">
+                        <button class="dropbtn">RESEARCH</button><img src="dropdown.png" width="10px" class="imgs">
+                            <div class="dropdown-content">
+                                <a href="#">Department Research </a>
+                                <a href="#">Collaborative Research</a>  
+                            </div>
+                    </div>
+                   
+                    <div class="dropdown">
+                        <button class="dropbtn">CINFERENCE</button><img src="dropdown.png" width="10px" class="imgs">
+                            <div class="dropdown-content">
+                                <a href="#">ICSE </a>
+                                <a href="#">NCSE</a>  
+                            </div>
+                    </div>
+                    <div class="dropdown">
+                        <button class="dropbtn">INFORMATION AFFAIRS</button>
+                    </div>
+                    <div class="dropdown">
+                        <button class="dropbtn">GALARRY</button>
+                    </div>
+                   
+                </div>
+                </div>
+            </div>
+            <div class="body">
+               <div class="backimage">
+               <img src="background.jpg" class="background">
+                </div> 
+                <div class="objectives">
+                    <div class="obj1">
+                        <h2>Our Objectives</h2>
+                        <p>It is envisaged that YTU will become a highly-prestigious technological centre of excellence in teaching and research with a strong commitment </p>
+                       <button class="readmore">Read more >></button>
+                    </div>
+                    <div class="obj2">
+                        <h2>Our Missions</h2>
+                        <p>To educate and train students systematically to become engineers, specialists and researchers who can effectively contribute to the building of a modern developed nation</p>
+                        <button class="readmore">Read more >></button>
+                    </div>
+                    <div class="obj3">
+                        <h2>Projects</h2>
+                        <p>when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting,</p>
+                        <button class="readmore">Read more >></button>
+                    </div>
+                </div>
+                <div class="rectormessage">
+                    <div>
+                    <img src="rector.jpg" class="rectorimg">
+                    </div>
+                     <div>
+                    <h1>Rector's Messages</h1>
+                    <p class="messp"> Yangon Technological University is one of the best universities in Myanmar and only allows admissions of students who gained high marks from the matriculation examination. A student's majorized engineering field is also decided by the marks he earned through the matriculation examination. Currently, YTU possesses 12 Engineering Departments, 6 Supporting Departments, 1 Research Centre and 47 Laboratories. There are currently about 2000 students seeking knowledge and experiences at YTU. VISION It is&hellip;</p>
+                    <button class="readmoremess">Read More >></button>
+                </div>
+                </div>
+                <div class="events">
+                    <h1 class="eventh1">YTU Events</h1>
+                    <div class="event">
+                        <img src="e1.png" class="eventimg">
+                        <img src="ytuimg1.jpeg" class="eventimg">
+                        <img src="e2.jpeg" class="eventimg">
+                        <img src="e3.jpeg" class="eventimg">
+                    </div>
+                    <button class="more">More >></button>  
+                </div>
+                <div class="welcome">
+                    <h1 class="eventh1">WELCOME TO YTU</h1>
+                    <p class="welcomep"> Yangon Technological University is one of the best universities in Myanmar and only allows admissions of students who gained high marks from the matriculation examination. A student&#8217;s majorized engineering field is also decided by the marks he earned through the matriculation examination. Currently, YTU possesses 12 Engineering Departments, 6 Supporting Departments, 1 Research Centre and 47 Laboratories. There are currently about 2000 students seeking knowledge and experiences at YTU. Find out more about the history of YTU at &#8230; </p>
+                    <button class="welcomebtn">Read more >></button>
+                </div>
+                <div class="bgimg">
+                    <div class="bgcontainer">
+                        <div class="card1">
+                            <h2 class="ph2">25</h2>
+                            <h3 class="ph3">DEPARTMENT PUBLISHED</h3>
+                        </div>
+                        <div class="card2">
+                            <h2 class="ph2">1000</h2>
+                            <h3 class="ph3">PROFESSIONAL LECTURES</h3>
+                        </div>
+                        <div class="card3">
+                            <h2 class="ph2">2000</h2>
+                            <h3 class="ph3">STUDENT ENROLLMENT</h3>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="updatenews">
+                    <h1 class="eventh1">Updated News</h1>
+                    <div class="newsrow1">
+                        <div class="news1">
+                            <img src="ytuimg1.jpeg" style="width: 380px;">
+                            <p>Ministry of Education Yangon Technological&hellip;</p>
+                        </div>
+                        <div class="news1">
+                            <img src="e1.png" style="width: 380px;">
+                            <p> Myanmar’s first Diploma Programme in&hellip;                   </p>
+                        </div>
+                        <div class="news1">
+                            <img src="e4.jpg" style="width: 380px; height: 250px;">
+                            <p>7th WWSPZP                   </p>
+                        </div>
+                        
+                    </div>
+                    <div class="newsrow2">
+                        <div class="news1">
+                            <img src="e5.jpg" style="width: 380px; height: 250px;">
+                            <p>Swal Daw Leaf                    </p>
+                        </div>
+                        <div class="news1">
+                            <img src="e6.jpg" style="width: 380px;">
+                            <p> Rector’s Collaborative Visit to University&hellip;                    </p>
+                        </div>
+                        <div class="news1">
+                            <img src="e3.jpeg" style="width: 380px; height: 250px;">
+                            <p> Training of IoT and Environmental&hellip;                   </p>
+                        </div>
+                        
+                    </div>
+                    <button class="newsbtn">More >></button>
+                </div>
+            </div>
+            <div class="footer">
+                <div class="aboutus">
+                    <h3 style="color: white;font-size: 25px;">ABOUT US</h3>
+                    <p style="text-align: justify;padding-left: 0px; color: white; font-size: 18px;">The present Yangon Technological University (Y.T.U) began as the Department of Engineering in 1923 under the Rangoon (Yangon) University. The Engineering Department was situated downtown, on the Bogyoke Aung San street. B.Sc. (Engineering) program in Civil Engineering began in 1924.</p>
+                    
+                    <p style="padding-left: 0px;color: white;font-size: 18px;padding-top: 30px;">&copy; Yangon Technological University - 2020				</p>
+                
+                </div>
+                <div class="links">
+                    <h3 style="color: white;font-size: 25px;">Our Links</h3>
+                    <ul style="font-size: 18px;list-style-type: disc;line-height: 26px;color: white;">
+                        <li>Home</li>
+                        <li>Architecture</li>
+                        <li>Civil Engineering</li>
+                        <li>Mechanical Engineering</li>
+                        <li>Mining Engineering</li>
+                        <li>Alumini</li>
+                    </ul>
+                </div>
+                <div class="posts">
+                    <h3 style="color: white;font-size: 25px;">Recent Posts</h3>
+                  <div>  
+                    <img src="post1.jpg" style="width: 80px;float: left; padding-top: 15px;" >
+                       <div class="post">
+                        <p style="color: white;font-size: 16px;padding-top: 10px;">Events Two</p>
+                       
+                    <p style="color: white;font-size: 15px;">November 18, 2019</p>  
+                </div> 
+                </div>
+                <div>  
+                    <img src="post2.jpg" style="width: 80px;float: left; padding-top: 15px;" >
+                       <div class="post">
+                        <p style="color: white;font-size: 16px;padding-top: 10px;">Events One</p>
+                       
+                    <p style="color: white;font-size: 15px;">November 18, 2019</p>  
+                </div> 
+                </div>
+                
+            </div>
+               
+            </div>
+        </div>
+    </body>
+</html>
